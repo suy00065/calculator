@@ -7,7 +7,7 @@ int main(int arg, char* argv[]) {
     int number1, number2, result;
     char operator;
 
-    printf ("수식을 입력해주세요: ");
+    printf ("수식을 입력해주세요(예시> 1 + 2): ");
     scanf ("%d %c %d", &number1, &operator, &number2);
     switch (operator)
     {
@@ -17,7 +17,7 @@ int main(int arg, char* argv[]) {
         case '-':
            result = sub(number1, number2);
             break;
-        case '*':
+        case '*': 
            result = multi(number1, number2);
             break;
         case '/':
