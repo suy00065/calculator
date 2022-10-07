@@ -29,7 +29,7 @@ int main(int arg, char* argv[]) {
     return 0;
 }
 int add(int number1, int number2) {
-    return 0;
+    return number1 + number2;
 }
 int sub(int number1, int number2) {
     return 0;
