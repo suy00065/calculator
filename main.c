@@ -35,7 +35,7 @@ int sub(int number1, int number2) {
     return 0;
 }
 int multi(int number1, int number2) {
-    return 0;
+    return number1 * number2;
 }
 int div(int number1, int number2) {
     return 0;
