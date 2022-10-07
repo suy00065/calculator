@@ -7,7 +7,7 @@ int main(int arg, char* argv[]) {
     int number1, number2, result;
     char operator;
 
-    printf ("Please enter a expression: ");
+    printf ("수식을 입력해주세요(예시> 1 + 2): ");
     scanf ("%d %c %d", &number1, &operator, &number2);
     switch (operator)
     {
@@ -17,7 +17,7 @@ int main(int arg, char* argv[]) {
         case '-':
            result = sub(number1, number2);
             break;
-        case '*':
+        case '*': 
            result = multi(number1, number2);
             break;
         case '/':
@@ -29,14 +29,19 @@ int main(int arg, char* argv[]) {
     return 0;
 }
 int add(int number1, int number2) {
-    return 0;
+    return number1 + number2;
 }
 int sub(int number1, int number2) {
-    return 0;
+    return number1 - number2;
 }
 int multi(int number1, int number2) {
-    return 0;
+    return number1 * number2;
 }
 int div(int number1, int number2) {
-    return 0;
+    if (number2 == 0) {
+        printf("0으로 나눌 수 없습니다.");
+        return 0;
+    }
+
+    return number1 / number2;
 }
