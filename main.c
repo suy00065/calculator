@@ -8,6 +8,7 @@ int main(int arg, char* argv[]) {
     char operator;
 
     printf ("Please enter a expression(ex> 1 + 2): ");
+
     scanf ("%d %c %d", &number1, &operator, &number2);
     switch (operator)
     {
@@ -17,7 +18,7 @@ int main(int arg, char* argv[]) {
         case '-':
            result = sub(number1, number2);
             break;
-        case '*':
+        case '*': 
            result = multi(number1, number2);
             break;
         case '/':
