@@ -38,5 +38,10 @@ int multi(int number1, int number2) {
     return number1 * number2;
 }
 int div(int number1, int number2) {
-    return 0;
+    if (number2 == 0) {
+        printf("0으로 나눌 수 없읍니다.");
+        return 0;
+    }
+    
+    return number1 / number2;
 }
